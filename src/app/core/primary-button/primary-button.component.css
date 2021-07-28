@@ -1,0 +1,28 @@
+:host {
+  width: 100%;
+  display: flex;
+}
+
+button {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #8477c9;
+  box-shadow: 0px 4px 8px #e7e7ff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 0;
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: rgba(255, 255, 255, 0.7);
+  cursor: default;
+}

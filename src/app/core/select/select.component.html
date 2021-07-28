@@ -1,0 +1,6 @@
+<label>
+  {{ label }}{{ getRequiredIndicator() }}
+  <select #select (change)="onChange(this.value)" (blur)="onTouched()" [disabled]="disabled">
+    <ng-content></ng-content>
+  </select>
+</label>

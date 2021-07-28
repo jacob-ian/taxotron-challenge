@@ -1,0 +1,25 @@
+:host {
+  background: #ffffff;
+  border: 2px solid #8477c9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px #e7e7ff;
+  -webkit-box-shadow: 0px 4px 8px #e7e7ff;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 10px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8477c9;
+}
+
+.message span {
+  margin-right: 8px;
+}

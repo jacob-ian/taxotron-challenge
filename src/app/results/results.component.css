@@ -1,0 +1,42 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+  position: relative;
+}
+
+.result-half {
+  justify-self: flex-end;
+  max-width: 320px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.results label {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.tax-breakdown {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.total {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}

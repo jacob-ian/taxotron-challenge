@@ -1,0 +1,4 @@
+<label [class.disabled]="disabled">
+  {{label}} {{getRequiredIndicator()}}
+  <input #input type="text" (input)="onInput(this.textValue)" (blur)="onTouched()" [disabled]="disabled" placeholder="Amount"/>
+</label>

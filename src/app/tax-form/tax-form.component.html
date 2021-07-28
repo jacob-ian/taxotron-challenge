@@ -1,0 +1,14 @@
+<form [formGroup]="taxForm" (submit)="submit()">
+  <app-select label="Select your country of residence" required="true" formControlName="country">
+    <option value="aus">Australia</option>
+  </app-select>
+
+  <app-select label="Select an income year" required="true" formControlName="year">
+    <option value="2020">2020 - 2021</option>
+  </app-select>
+
+  <app-money-input label="Enter your total taxable income for the income year" required="true" formControlName="income">
+  </app-money-input>
+
+  <app-primary-button *ngIf="!disableForm" [disabled]="taxForm.invalid">Calculate</app-primary-button>
+</form>

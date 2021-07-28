@@ -1,0 +1,18 @@
+<div class="half padded">
+  <h1>Your tax results</h1>
+  <app-tax-form [disableForm]="true"></app-tax-form>
+  <app-return-button></app-return-button>
+</div>
+<div class="half result-half">
+  <div class="results" *ngIf="taxResult">
+    <div class="total">
+      <label>Your estimated income tax is:</label>
+      <app-tax-total [value]="taxResult.totalTax"></app-tax-total>
+    </div>
+    <div class="tax-breakdown">
+      <label>Breakdown</label>
+      <app-tax-bracket *ngFor="let bracket of taxResult.brackets" [bracket]="bracket.description" [value]="bracket.tax">
+      </app-tax-bracket>
+    </div>
+  </div>
+</div>
